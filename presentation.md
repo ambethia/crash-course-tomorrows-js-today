@@ -165,7 +165,7 @@ let { life, ταυ } = numbers;
 
 ```js
 const numbers = { life: 42, ταυ: Math.PI * 2 };
-let { universe, τ } = numbers;
+let { life:universe, ταυ:τ } = numbers;
 
 // universe === 42
 // τ === 6.283185
