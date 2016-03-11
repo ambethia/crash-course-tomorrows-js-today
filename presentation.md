@@ -614,12 +614,11 @@ let msg = {
 
 ```js
 
-class Member {
+class Member extends Person {
 
   constructor(givenName, familyName, rank = 1) {
-    // super()
-    this.givenName = givenName;
-    this.familyName = familyName;
+    super();
+    this.rank = rank;
   }
 
   promote() {
