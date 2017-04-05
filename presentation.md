@@ -332,7 +332,7 @@ numbers.map((n) => {
 ^ The curly braces are even optional for single line functions!
 
 ```js
-numbers.map((n) => n * ταυ);
+numbers.map(n => n * ταυ);
 ```
 
 ^ Checkout the implicit return!
