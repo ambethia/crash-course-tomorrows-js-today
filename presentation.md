@@ -332,10 +332,18 @@ numbers.map((n) => {
 ^ The curly braces are even optional for single line functions!
 
 ```js
-numbers.map(n => n * ταυ);
+numbers.map((n) => n * ταυ);
 ```
 
 ^ Checkout the implicit return!
+
+---
+
+^ Parens too for one and only one argument (0 or more than one requires them)
+
+```js
+numbers.map(n => n * ταυ);
+```
 
 ---
 
@@ -358,7 +366,7 @@ function fish(words) {
 ```js
 function fish(words) {
   this.subject = 'fish.';
-  words.forEach((word) => console.log(word, this.subject));
+  words.forEach(word => console.log(word, this.subject));
 }
 ```
 
@@ -368,7 +376,7 @@ function fish(words) {
 
 ![](https://m.popkey.co/2acfaa/qxXob.gif)
 
-^ The new arrow function syntax preserves the binding of `this` to the lexical scope where the function is defined. This can _great_ simplify a lot of the code we write everyday. I know we could also pass this as a second argument to `forEach`, but this is a contrived example, why are we even using `this` at all, _am I right_?
+^ The new arrow function syntax preserves the binding of `this` to the lexical scope where the function is defined. This can _greatly_ simplify a lot of the code we write everyday. I know we could also pass this as a second argument to `forEach`, but this is a contrived example, why are we even using `this` at all, _am I right_?
 
 ---
 
